@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
+
+:root{
+    --cor-fundo: #3a4b3a ;
+    --cor-principal: #0e5545 ;
+    --cor-secundaria: #2c9b31; 
+    --cor-destaque: #ffffff;
+    --cor-texto: #ffffff;
+
+}
+*{
+    font-family: "Tiny5", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+body{
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.caixa-principal{
+    background-color: var(--cor-principal);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 10px 10px var(--cor-secundaria);
+}
+
+h1{
+    color: var(--cor-destaque);
+}
+
+button {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    transition: background-color 0.3s;
+    margin: 10px;
+    font-weight: 200;
+}
+
+button:hover{
+    background-color: var(--cor-destaque);
+    color: var(--cor-principal);
+}
